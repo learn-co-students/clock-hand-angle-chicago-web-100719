@@ -6,11 +6,11 @@ def clock_angle(time)
   total = (hour_deg + min_deg) - min_rev
 
   if total >= 360
-    total = total - 360.0
+    total -= 360.0
   end
 
   if total > 180
-    total = total - 180
+    total -= 180
   end
 
   return total
